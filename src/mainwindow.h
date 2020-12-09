@@ -2,11 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "qfile.h"
-#include "qfiledialog.h"
-#include "qmessagebox.h"
+#include <qfile.h>
+#include <qfiledialog.h>
+#include <qmessagebox.h>
+#include <qsound.h>
+#include <qdebug.h>
 #include "player.h"
-#include "qsound.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

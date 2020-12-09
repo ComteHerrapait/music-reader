@@ -2,10 +2,10 @@
 #define PLAYER_H
 
 #include <QWidget>
-#include "QSound"
-#include "QList"
-#include "qdir.h"
-#include "qdebug.h"
+#include <QSound>
+#include <QList>
+#include <QDir>
+#include <QDebug>
 
 class Player : public QWidget
 {

@@ -2,10 +2,9 @@
 
 Player::Player(QWidget *parent) : QWidget(parent)
 {
-    qDebug() << "player created";
 }
 
-void createSoundFont(){
+void Player::createSoundFont(){
     QDir directory(":/instruments/soundfonts/piano/");
     QStringList noteList = directory.entryList(QStringList("*.wav"));
     qDebug() << noteList;

@@ -35,9 +35,8 @@ void MainWindow::on_playBtn_clicked()
     int tempo(ui->tempoBox->value());
     QString instrument(ui->instrumentBox->currentText());
 
+    qDebug() << tempo;
+
     Player player;
     player.createSoundFont();
-
-
-
 }
