@@ -71,3 +71,9 @@ Thumbs.db
 *.dll
 *.exe
 
+
+src/soundfonts/
+
+resources/soundfonts/
+
+build-MusicReader-Desktop_Qt_5_14_1_MinGW_64_bit-Debug/
