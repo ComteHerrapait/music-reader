@@ -71,17 +71,7 @@
         <widget class="QComboBox" name="instrumentBox">
          <item>
           <property name="text">
-           <string>Guitare</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Piano</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Trompette</string>
+           <string>pas d'instruments</string>
           </property>
          </item>
         </widget>
@@ -152,6 +142,16 @@
         <widget class="QPushButton" name="playBtn">
          <property name="text">
           <string>Jouer !</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="TestBtn">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Test</string>
          </property>
         </widget>
        </item>

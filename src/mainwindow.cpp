@@ -6,6 +6,18 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    //initialize available intruments
+    QDir directory(":/instruments/soundfonts/");
+    QStringList intrumentList = directory.entryList();
+    if (!intrumentList.isEmpty()) {
+        //remove no instrument warning
+        ui->instrumentBox->removeItem(0);
+        for ( const auto& i : intrumentList  )
+        {
+            ui->instrumentBox->addItem(i);
+        }
+    }
 }
 
 MainWindow::~MainWindow()
@@ -30,13 +42,18 @@ void MainWindow::on_playBtn_clicked()
         QMessageBox::information(0, "Erreur", imageFile.errorString());
         return;
     }
-
     QImage partition(path);
     int tempo(ui->tempoBox->value());
+
     QString instrument(ui->instrumentBox->currentText());
 
-    qDebug() << tempo;
+    this->player.createSoundFont(instrument);
+    ui->TestBtn->setEnabled(true);
+}
 
-    Player player;
-    player.createSoundFont();
+void MainWindow::on_TestBtn_clicked()
+{
+    //plays a random note of the instrument
+    int v = QRandomGenerator::global()->bounded(0, 21);
+    this->player.playSound(v);
 }

@@ -13,9 +13,10 @@ class Player : public QWidget
 public:
     explicit Player(QWidget *parent = nullptr);
     QString partition;
-    QList<QSound> soundFont;
+    QList<QSound*> soundFont;
 
-    void createSoundFont();
+    void createSoundFont(QString instrument_);
+    void playSound(int index);
 signals:
 
 };
