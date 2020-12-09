@@ -2,6 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "qfile.h"
+#include "qfiledialog.h"
+#include "qmessagebox.h"
+#include "player.h"
+#include "qsound.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,6 +19,11 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+private slots:
+    void on_browseBtn_clicked();
+
+    void on_playBtn_clicked();
 
 private:
     Ui::MainWindow *ui;
