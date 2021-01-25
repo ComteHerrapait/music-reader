@@ -49,10 +49,11 @@ void MainWindow::on_playBtn_clicked()
 
     this->player.createSoundFont(instrument);
 
-    //QString processedPartition = ImageProcessor::fakeProcessing(); //placeholder
-    qDebug() << "done";
-    //this->player.playSong(processedPartition,tempo);
+    QString processedPartition = ImageProcessor::fakeProcessing(); //placeholder
+    this->player.playSong(processedPartition,tempo);
     ui->TestBtn->setEnabled(true);
+
+    qDebug() << "done";
 }
 
 void MainWindow::on_TestBtn_clicked()
@@ -66,28 +67,26 @@ void MainWindow::on_TestBtn_clicked()
 
     //test
     QMediaPlayer *player = new QMediaPlayer;
+    player->setMedia(QUrl::fromLocalFile("soundfonts/piano/Piano-01.wav"));
+    //setMedia(QUrl::fromLocalFile("soundfonts/piano/leon.wav"));
     player->setVolume(50);
+    player->play();
+    qDebug() << QTime::currentTime() << "PLAY 1 ";
 
-    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-01.wav"));
-    player->play();
-    sleep(1);
-    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-01.wav"));
-    player->play();
-    sleep(1);
-    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-02.wav"));
-    player->play();
-    sleep(1);
-    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-03.wav"));
-    player->play();
-    sleep(1);
-    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-02.wav"));
-    player->play();
-    sleep(1);
-    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-03.wav"));
-    player->play();
-    sleep(1);
-    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-01.wav"));
-    player->play();
-    sleep(1);
+    Sleep(560);
 
+    QMediaPlayer *player2 = new QMediaPlayer;
+    player2->setMedia(QUrl::fromLocalFile("soundfonts/piano/Piano-01.wav"));
+    player2->setVolume(50);
+    player2->play();
+    qDebug() << QTime::currentTime() << "PLAY 2 ";
+
+    Sleep(590);
+
+    QMediaPlayer *player3 = new QMediaPlayer;
+    player3->setMedia(QUrl::fromLocalFile("soundfonts/piano/Piano-01.wav"));
+    player3->setVolume(50);
+    player3->play();
+    qDebug() << QTime::currentTime() << "PLAY 3 ";
+    Sleep(510);
 }

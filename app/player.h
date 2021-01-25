@@ -9,6 +9,10 @@
 #include <QTimer>
 #include <chrono>
 #include <thread>
+#include <QUrl>
+#include <QMediaPlayer>
+#include <QTime>
+#include <Windows.h>
 
 
 class Player : public QWidget
@@ -16,7 +20,7 @@ class Player : public QWidget
     Q_OBJECT
 public:
     explicit Player(QWidget *parent = nullptr);
-    QList<QSound*> soundFont;
+    QList<QString*> soundFont;
     void createSoundFont(QString instrument_);
     void playNote(int index);
     void playNotes(QList<int> indexes);

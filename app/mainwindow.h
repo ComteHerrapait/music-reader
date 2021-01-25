@@ -16,6 +16,7 @@
 #include <dos.h>
 #include <windows.h>
 #include <QtMultimedia/QMediaPlayer>
+#include <QTime>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

@@ -6,23 +6,28 @@ Player::Player(QWidget *parent) : QWidget(parent)
 
 void Player::createSoundFont(QString instrument_){
     this->soundFont.clear();
-    QString intrumentPath = ":/instruments/soundfonts/" + instrument_ + "/";
+    QString intrumentPath = "soundfonts/" + instrument_ + "/";
     QDir directory(intrumentPath);
     QStringList noteList = directory.entryList(QStringList("*.wav"));
     for ( const auto& i : noteList  )
     {
         QFileInfo file(directory, i);
         file.canonicalFilePath();
-        QString path = file.canonicalFilePath();
-        QSound* s = new QSound(path,this);
-        this->soundFont.append(s);
+        QString *path = new QString(file.canonicalFilePath());
+        this->soundFont.append(path);
     }
     qDebug() << "soundfont initialized";
+    foreach (QString * note, this->soundFont){
+        qDebug() << "note :" << *note;
+    }
 
 }
 
 void Player::playNote(int index){
-    this->soundFont[index]->play();
+    QMediaPlayer *media = new QMediaPlayer;
+    media->setMedia(QUrl::fromLocalFile(*this->soundFont[index]));
+    media->setVolume(50);
+    media->play();
 }
 
 void Player::playNotes(QList<int> indexes){
@@ -30,7 +35,7 @@ void Player::playNotes(QList<int> indexes){
     {
         this->playNote(i);
     }
-    qDebug() << "played sounds " << indexes;
+    qDebug() << QTime::currentTime() << "played sounds " << indexes;
 }
 
 void Player::playSong(QString partition, int tempo){
@@ -45,7 +50,8 @@ void Player::playSong(QString partition, int tempo){
             notesInt << note.toInt();
         }
         this->playNotes(notesInt);
-        std::this_thread::sleep_for(std::chrono::milliseconds(tempo/60000));
+        Sleep(60000/tempo);
+        //std::this_thread::sleep_for(std::chrono::milliseconds(tempo/60000));
     }
 
 
