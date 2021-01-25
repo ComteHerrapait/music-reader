@@ -14,12 +14,39 @@ void Player::createSoundFont(QString instrument_){
         QFileInfo file(directory, i);
         file.canonicalFilePath();
         QString path = file.canonicalFilePath();
-        QSound* s = new QSound(path);
+        QSound* s = new QSound(path,this);
         this->soundFont.append(s);
     }
+    qDebug() << "soundfont initialized";
+
 }
 
-void Player::playSound(int index){
+void Player::playNote(int index){
     this->soundFont[index]->play();
-    qDebug() << "played sound " << index;
+}
+
+void Player::playNotes(QList<int> indexes){
+    foreach (int i , indexes)
+    {
+        this->playNote(i);
+    }
+    qDebug() << "played sounds " << indexes;
+}
+
+void Player::playSong(QString partition, int tempo){
+    QTimer timer;
+    QStringList instants = partition.split(QRegExp("[\n]"), QString::SkipEmptyParts);
+    foreach (QString instant, instants){
+        QStringList elements = instant.split(QRegExp("[;]"), QString::SkipEmptyParts);
+        double duration = elements.first().toDouble();
+        QStringList notes = elements.last().split(QRegExp("[,]"), QString::SkipEmptyParts);
+        QList<int> notesInt;
+        foreach(QString note, notes){
+            notesInt << note.toInt();
+        }
+        this->playNotes(notesInt);
+        std::this_thread::sleep_for(std::chrono::milliseconds(tempo/60000));
+    }
+
+
 }

@@ -6,17 +6,21 @@
 #include <QList>
 #include <QDir>
 #include <QDebug>
+#include <QTimer>
+#include <chrono>
+#include <thread>
+
 
 class Player : public QWidget
 {
     Q_OBJECT
 public:
     explicit Player(QWidget *parent = nullptr);
-    QString partition;
     QList<QSound*> soundFont;
-
     void createSoundFont(QString instrument_);
-    void playSound(int index);
+    void playNote(int index);
+    void playNotes(QList<int> indexes);
+    void playSong(QString partition, int tempo);
 signals:
 
 };

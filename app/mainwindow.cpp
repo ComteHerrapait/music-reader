@@ -48,12 +48,46 @@ void MainWindow::on_playBtn_clicked()
     QString instrument(ui->instrumentBox->currentText());
 
     this->player.createSoundFont(instrument);
+
+    //QString processedPartition = ImageProcessor::fakeProcessing(); //placeholder
+    qDebug() << "done";
+    //this->player.playSong(processedPartition,tempo);
     ui->TestBtn->setEnabled(true);
 }
 
 void MainWindow::on_TestBtn_clicked()
 {
+    //plays a sound
+    //this->player.playSong(ImageProcessor::fakeProcessing(),ui->tempoBox->value());
+
     //plays a random note of the instrument
-    int v = QRandomGenerator::global()->bounded(0, 21);
-    this->player.playSound(v);
+    //int v = QRandomGenerator::global()->bounded(0, 21);
+    //this->player.playNote(v);
+
+    //test
+    QMediaPlayer *player = new QMediaPlayer;
+    player->setVolume(50);
+
+    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-01.wav"));
+    player->play();
+    sleep(1);
+    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-01.wav"));
+    player->play();
+    sleep(1);
+    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-02.wav"));
+    player->play();
+    sleep(1);
+    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-03.wav"));
+    player->play();
+    sleep(1);
+    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-02.wav"));
+    player->play();
+    sleep(1);
+    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-03.wav"));
+    player->play();
+    sleep(1);
+    player->setMedia(QUrl("qrc:/instruments/soundfonts/piano/Piano-01.wav"));
+    player->play();
+    sleep(1);
+
 }

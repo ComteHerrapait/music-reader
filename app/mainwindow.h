@@ -8,6 +8,14 @@
 #include <QDebug>
 #include <QRandomGenerator>
 #include "player.h"
+#include "imageprocessor.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+#include <unistd.h>
+#include <dos.h>
+#include <windows.h>
+#include <QtMultimedia/QMediaPlayer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
