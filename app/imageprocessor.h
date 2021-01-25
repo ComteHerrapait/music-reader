@@ -3,6 +3,7 @@
 #include <QString>
 #include <QImage>
 #include <QDebug>
+#include <QFile>
 
 class ImageProcessor
 {

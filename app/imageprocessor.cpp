@@ -6,11 +6,18 @@ ImageProcessor::ImageProcessor()
 }
 
 QString ImageProcessor::fakeProcessing(){
-    QString fakesong("1;1\n"
-                     "1;2\n"
-                     "1;5\n"
-                     "1;7\n");
-    return  fakesong;
+    QFile file("soundfonts/lamb.csv");
+    if (!file.open(QIODevice::ReadOnly)) {
+        qDebug() << file.errorString();
+    }
+
+    QStringList wordList;
+    while (!file.atEnd()) {
+        QByteArray line = file.readLine();
+        wordList.append(line);
+    }
+
+    return  wordList.join("\n");
 }
 
 QString ImageProcessor::Processing(QImage partitionImage){
