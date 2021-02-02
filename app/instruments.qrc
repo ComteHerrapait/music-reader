@@ -1,109 +1,40 @@
 <RCC>
-    <qresource prefix="/instruments">
-        <file>soundfonts/trumpet/Trumpet-01.wav</file>
-        <file>soundfonts/trumpet/Trumpet-02.wav</file>
-        <file>soundfonts/trumpet/Trumpet-03.wav</file>
-        <file>soundfonts/trumpet/Trumpet-04.wav</file>
-        <file>soundfonts/trumpet/Trumpet-05.wav</file>
-        <file>soundfonts/trumpet/Trumpet-06.wav</file>
-        <file>soundfonts/trumpet/Trumpet-07.wav</file>
-        <file>soundfonts/trumpet/Trumpet-08.wav</file>
-        <file>soundfonts/trumpet/Trumpet-09.wav</file>
-        <file>soundfonts/trumpet/Trumpet-10.wav</file>
-        <file>soundfonts/trumpet/Trumpet-11.wav</file>
-        <file>soundfonts/trumpet/Trumpet-12.wav</file>
-        <file>soundfonts/trumpet/Trumpet-13.wav</file>
-        <file>soundfonts/trumpet/Trumpet-14.wav</file>
-        <file>soundfonts/trumpet/Trumpet-15.wav</file>
-        <file>soundfonts/trumpet/Trumpet-16.wav</file>
-        <file>soundfonts/trumpet/Trumpet-17.wav</file>
-        <file>soundfonts/trumpet/Trumpet-18.wav</file>
-        <file>soundfonts/trumpet/Trumpet-19.wav</file>
-        <file>soundfonts/trumpet/Trumpet-20.wav</file>
-        <file>soundfonts/trumpet/Trumpet-21.wav</file>
-        <file>soundfonts/piano/Piano-01.wav</file>
-        <file>soundfonts/piano/Piano-02.wav</file>
-        <file>soundfonts/piano/Piano-03.wav</file>
-        <file>soundfonts/piano/Piano-04.wav</file>
-        <file>soundfonts/piano/Piano-05.wav</file>
-        <file>soundfonts/piano/Piano-06.wav</file>
-        <file>soundfonts/piano/Piano-07.wav</file>
-        <file>soundfonts/piano/Piano-08.wav</file>
-        <file>soundfonts/piano/Piano-09.wav</file>
-        <file>soundfonts/piano/Piano-10.wav</file>
-        <file>soundfonts/piano/Piano-11.wav</file>
-        <file>soundfonts/piano/Piano-12.wav</file>
-        <file>soundfonts/piano/Piano-13.wav</file>
-        <file>soundfonts/piano/Piano-14.wav</file>
-        <file>soundfonts/piano/Piano-15.wav</file>
-        <file>soundfonts/piano/Piano-16.wav</file>
-        <file>soundfonts/piano/Piano-17.wav</file>
-        <file>soundfonts/piano/Piano-18.wav</file>
-        <file>soundfonts/piano/Piano-19.wav</file>
-        <file>soundfonts/piano/Piano-20.wav</file>
-        <file>soundfonts/piano/Piano-21.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-01.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-02.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-03.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-04.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-05.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-06.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-07.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-08.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-09.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-10.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-11.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-12.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-13.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-14.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-15.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-16.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-17.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-18.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-19.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-20.wav</file>
-        <file>soundfonts/elecpiano/ElecPiano-21.wav</file>
-        <file>soundfonts/cello/Cello-01.wav</file>
-        <file>soundfonts/cello/Cello-02.wav</file>
-        <file>soundfonts/cello/Cello-03.wav</file>
-        <file>soundfonts/cello/Cello-04.wav</file>
-        <file>soundfonts/cello/Cello-05.wav</file>
-        <file>soundfonts/cello/Cello-06.wav</file>
-        <file>soundfonts/cello/Cello-07.wav</file>
-        <file>soundfonts/cello/Cello-08.wav</file>
-        <file>soundfonts/cello/Cello-09.wav</file>
-        <file>soundfonts/cello/Cello-10.wav</file>
-        <file>soundfonts/cello/Cello-11.wav</file>
-        <file>soundfonts/cello/Cello-12.wav</file>
-        <file>soundfonts/cello/Cello-13.wav</file>
-        <file>soundfonts/cello/Cello-14.wav</file>
-        <file>soundfonts/cello/Cello-15.wav</file>
-        <file>soundfonts/cello/Cello-16.wav</file>
-        <file>soundfonts/cello/Cello-17.wav</file>
-        <file>soundfonts/cello/Cello-18.wav</file>
-        <file>soundfonts/cello/Cello-19.wav</file>
-        <file>soundfonts/cello/Cello-20.wav</file>
-        <file>soundfonts/cello/Cello-21.wav</file>
-        <file>soundfonts/violon/Violin-01.wav</file>
-        <file>soundfonts/violon/Violin-02.wav</file>
-        <file>soundfonts/violon/Violin-03.wav</file>
-        <file>soundfonts/violon/Violin-04.wav</file>
-        <file>soundfonts/violon/Violin-05.wav</file>
-        <file>soundfonts/violon/Violin-06.wav</file>
-        <file>soundfonts/violon/Violin-07.wav</file>
-        <file>soundfonts/violon/Violin-08.wav</file>
-        <file>soundfonts/violon/Violin-09.wav</file>
-        <file>soundfonts/violon/Violin-10.wav</file>
-        <file>soundfonts/violon/Violin-11.wav</file>
-        <file>soundfonts/violon/Violin-12.wav</file>
-        <file>soundfonts/violon/Violin-13.wav</file>
-        <file>soundfonts/violon/Violin-14.wav</file>
-        <file>soundfonts/violon/Violin-15.wav</file>
-        <file>soundfonts/violon/Violin-16.wav</file>
-        <file>soundfonts/violon/Violin-17.wav</file>
-        <file>soundfonts/violon/Violin-18.wav</file>
-        <file>soundfonts/violon/Violin-19.wav</file>
-        <file>soundfonts/violon/Violin-20.wav</file>
-        <file>soundfonts/violon/Violin-21.wav</file>
+    <qresource prefix="/">
+        <file>instruments/piano_3/1- DO 3 - c3.mp3</file>
+        <file>instruments/piano_3/2- DO# 3 - c-3.mp3</file>
+        <file>instruments/piano_3/3- RE 3 - d3.mp3</file>
+        <file>instruments/piano_3/4- RE# 3 - d-3.mp3</file>
+        <file>instruments/piano_3/5- MI 3 - e3.mp3</file>
+        <file>instruments/piano_3/6- FA 3 - f3.mp3</file>
+        <file>instruments/piano_3/7- FA# 3 - f-3.mp3</file>
+        <file>instruments/piano_3/8- SOL 3 - g3.mp3</file>
+        <file>instruments/piano_3/9- SOL# 3 - g-3.mp3</file>
+        <file>instruments/piano_3/10- LA 3 - a3.mp3</file>
+        <file>instruments/piano_3/11- LA# 3 - a-3.mp3</file>
+        <file>instruments/piano_3/12- SI 3 - b3.mp3</file>
+        <file>instruments/piano_4/1- c4.mp3</file>
+        <file>instruments/piano_4/2- c-4.mp3</file>
+        <file>instruments/piano_4/3- d4.mp3</file>
+        <file>instruments/piano_4/4- d-4.mp3</file>
+        <file>instruments/piano_4/5- e4.mp3</file>
+        <file>instruments/piano_4/6- f4.mp3</file>
+        <file>instruments/piano_4/7- f-4.mp3</file>
+        <file>instruments/piano_4/8- g4.mp3</file>
+        <file>instruments/piano_4/9- g-4.mp3</file>
+        <file>instruments/piano_4/10- a4.mp3</file>
+        <file>instruments/piano_4/11- a-4.mp3</file>
+        <file>instruments/piano_4/12- b4.mp3</file>
+        <file>instruments/piano_5/1- c5.mp3</file>
+        <file>instruments/piano_5/2- c-5.mp3</file>
+        <file>instruments/piano_5/3- d5.mp3</file>
+        <file>instruments/piano_5/4- d-5.mp3</file>
+        <file>instruments/piano_5/5- e5.mp3</file>
+        <file>instruments/piano_5/6- f5.mp3</file>
+        <file>instruments/piano_5/7- f-5.mp3</file>
+        <file>instruments/piano_5/8- g5.mp3</file>
+        <file>instruments/piano_5/9- g-5.mp3</file>
+        <file>instruments/piano_5/10 - a5.mp3</file>
+        <file>instruments/piano_5/11 - a-5.mp3</file>
+        <file>instruments/piano_5/12 - b5.mp3</file>
     </qresource>
 </RCC>

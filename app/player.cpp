@@ -6,9 +6,10 @@ Player::Player(QWidget *parent) : QWidget(parent)
 
 void Player::createSoundFont(QString instrument_){
     this->soundFont.clear();
-    QString intrumentPath = "soundfonts/" + instrument_ + "/";
+    QString intrumentPath = "instruments/" + instrument_ + "/";
+    qDebug() << "path to instrument" << intrumentPath;
     QDir directory(intrumentPath);
-    QStringList noteList = directory.entryList(QStringList("*.wav"));
+    QStringList noteList = directory.entryList(QStringList("*.mp3"));
     for ( const auto& i : noteList  )
     {
         QFileInfo file(directory, i);
@@ -22,6 +23,7 @@ void Player::createSoundFont(QString instrument_){
     }
 
 }
+
 
 void Player::playNote(int index){
     QMediaPlayer *media = new QMediaPlayer;

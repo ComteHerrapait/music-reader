@@ -8,8 +8,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     //initialize available intruments
-    QDir directory(":/instruments/soundfonts/");
+    QDir directory(":/instruments/");
     QStringList intrumentList = directory.entryList();
+    qDebug() << "instruments : " << intrumentList;
     if (!intrumentList.isEmpty()) {
         //remove no instrument warning
         ui->instrumentBox->removeItem(0);
@@ -44,12 +45,11 @@ void MainWindow::on_playBtn_clicked()
     }
     QImage partition(path);
     int tempo(ui->tempoBox->value());
-
     QString instrument(ui->instrumentBox->currentText());
-
     this->player.createSoundFont(instrument);
 
-    QString processedPartition = ImageProcessor::fakeProcessing(); //placeholder
+    QString processedPartition = ImageProcessor::Processing(partition); //placeholder
+
     this->player.playSong(processedPartition,tempo);
     ui->TestBtn->setEnabled(true);
 
@@ -58,35 +58,14 @@ void MainWindow::on_playBtn_clicked()
 
 void MainWindow::on_TestBtn_clicked()
 {
-    //plays a sound
-    //this->player.playSong(ImageProcessor::fakeProcessing(),ui->tempoBox->value());
+    int tempo(ui->tempoBox->value());
+    QString instrument(ui->instrumentBox->currentText());
 
-    //plays a random note of the instrument
-    //int v = QRandomGenerator::global()->bounded(0, 21);
-    //this->player.playNote(v);
+    this->player.createSoundFont(instrument);
 
-    //test
-    QMediaPlayer *player = new QMediaPlayer;
-    player->setMedia(QUrl::fromLocalFile("soundfonts/piano/Piano-01.wav"));
-    //setMedia(QUrl::fromLocalFile("soundfonts/piano/leon.wav"));
-    player->setVolume(50);
-    player->play();
-    qDebug() << QTime::currentTime() << "PLAY 1 ";
+    QString processedPartition = ImageProcessor::fakeProcessing(this); //placeholder
+    this->player.playSong(processedPartition,tempo);
+    ui->TestBtn->setEnabled(true);
 
-    Sleep(560);
-
-    QMediaPlayer *player2 = new QMediaPlayer;
-    player2->setMedia(QUrl::fromLocalFile("soundfonts/piano/Piano-01.wav"));
-    player2->setVolume(50);
-    player2->play();
-    qDebug() << QTime::currentTime() << "PLAY 2 ";
-
-    Sleep(590);
-
-    QMediaPlayer *player3 = new QMediaPlayer;
-    player3->setMedia(QUrl::fromLocalFile("soundfonts/piano/Piano-01.wav"));
-    player3->setVolume(50);
-    player3->play();
-    qDebug() << QTime::currentTime() << "PLAY 3 ";
-    Sleep(510);
+    qDebug() << "done";
 }

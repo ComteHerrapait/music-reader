@@ -151,7 +151,7 @@
           <bool>true</bool>
          </property>
          <property name="text">
-          <string>Test</string>
+          <string>Ouvrir CSV</string>
          </property>
         </widget>
        </item>

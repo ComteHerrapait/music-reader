@@ -5,10 +5,13 @@ ImageProcessor::ImageProcessor()
 
 }
 
-QString ImageProcessor::fakeProcessing(){
-    QFile file("soundfonts/lamb.csv");
+QString ImageProcessor::fakeProcessing(QWidget *parent){
+    QString path = QFileDialog::getOpenFileName(parent, "choisir une partition",
+                                                "instruments/lamb.csv",//default directory
+                                                "partitions (*.csv)");
+    QFile file(path);
     if (!file.open(QIODevice::ReadOnly)) {
-        qDebug() << file.errorString();
+        qDebug() << "error opening preprocessed file" << file.errorString();
     }
 
     QStringList wordList;

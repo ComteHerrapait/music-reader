@@ -4,12 +4,13 @@
 #include <QImage>
 #include <QDebug>
 #include <QFile>
+#include <QFileDialog>
 
 class ImageProcessor
 {
 public:
     ImageProcessor();
-    static QString fakeProcessing();
+    static QString fakeProcessing(QWidget *parent);
     static QString Processing(QImage partitionImage);
 };
 
