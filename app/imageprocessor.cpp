@@ -7,7 +7,7 @@ ImageProcessor::ImageProcessor()
 
 QString ImageProcessor::fakeProcessing(QWidget *parent){
     QString path = QFileDialog::getOpenFileName(parent, "choisir une partition",
-                                                "instruments/lamb.csv",//default directory
+                                                "partitions",//default directory
                                                 "partitions (*.csv)");
     QFile file(path);
     if (!file.open(QIODevice::ReadOnly)) {
@@ -25,5 +25,6 @@ QString ImageProcessor::fakeProcessing(QWidget *parent){
 
 QString ImageProcessor::Processing(QImage partitionImage){
     //TODO
+
     qDebug() << "Processing feature not implemented yet";
 }
