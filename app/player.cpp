@@ -44,15 +44,17 @@ void Player::playSong(QString partition, int tempo){
     QTimer timer;
     QStringList instants = partition.split(QRegExp("[\n]"), QString::SkipEmptyParts);
     foreach (QString instant, instants){
-        QStringList elements = instant.split(QRegExp("[;]"), QString::SkipEmptyParts);
+        QStringList elements = instant.split(QRegExp("[,]"), QString::SkipEmptyParts);
         double duration = elements.first().toDouble();
-        QStringList notes = elements.last().split(QRegExp("[,]"), QString::SkipEmptyParts);
+        elements.removeFirst();
         QList<int> notesInt;
-        foreach(QString note, notes){
-            notesInt << note.toInt();
+        foreach(QString note, elements){
+            if (note != "-1") {
+                notesInt << note.toInt();
+            }
         }
         this->playNotes(notesInt);
-        Sleep(60000/tempo);
+        Sleep(duration * 60000/tempo);
         //std::this_thread::sleep_for(std::chrono::milliseconds(tempo/60000));
     }
 

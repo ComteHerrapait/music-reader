@@ -1,40 +1,50 @@
 <RCC>
     <qresource prefix="/">
-        <file>instruments/piano_3/1- DO 3 - c3.mp3</file>
-        <file>instruments/piano_3/2- DO# 3 - c-3.mp3</file>
-        <file>instruments/piano_3/3- RE 3 - d3.mp3</file>
-        <file>instruments/piano_3/4- RE# 3 - d-3.mp3</file>
-        <file>instruments/piano_3/5- MI 3 - e3.mp3</file>
-        <file>instruments/piano_3/6- FA 3 - f3.mp3</file>
-        <file>instruments/piano_3/7- FA# 3 - f-3.mp3</file>
-        <file>instruments/piano_3/8- SOL 3 - g3.mp3</file>
-        <file>instruments/piano_3/9- SOL# 3 - g-3.mp3</file>
         <file>instruments/piano_3/10- LA 3 - a3.mp3</file>
         <file>instruments/piano_3/11- LA# 3 - a-3.mp3</file>
         <file>instruments/piano_3/12- SI 3 - b3.mp3</file>
-        <file>instruments/piano_4/1- c4.mp3</file>
-        <file>instruments/piano_4/2- c-4.mp3</file>
-        <file>instruments/piano_4/3- d4.mp3</file>
-        <file>instruments/piano_4/4- d-4.mp3</file>
-        <file>instruments/piano_4/5- e4.mp3</file>
-        <file>instruments/piano_4/6- f4.mp3</file>
-        <file>instruments/piano_4/7- f-4.mp3</file>
-        <file>instruments/piano_4/8- g4.mp3</file>
-        <file>instruments/piano_4/9- g-4.mp3</file>
         <file>instruments/piano_4/10- a4.mp3</file>
         <file>instruments/piano_4/11- a-4.mp3</file>
         <file>instruments/piano_4/12- b4.mp3</file>
-        <file>instruments/piano_5/1- c5.mp3</file>
-        <file>instruments/piano_5/2- c-5.mp3</file>
-        <file>instruments/piano_5/3- d5.mp3</file>
-        <file>instruments/piano_5/4- d-5.mp3</file>
-        <file>instruments/piano_5/5- e5.mp3</file>
-        <file>instruments/piano_5/6- f5.mp3</file>
-        <file>instruments/piano_5/7- f-5.mp3</file>
-        <file>instruments/piano_5/8- g5.mp3</file>
-        <file>instruments/piano_5/9- g-5.mp3</file>
         <file>instruments/piano_5/10 - a5.mp3</file>
         <file>instruments/piano_5/11 - a-5.mp3</file>
         <file>instruments/piano_5/12 - b5.mp3</file>
+        <file>instruments/kalimba/10- D2.mp3</file>
+        <file>instruments/piano_3/01- DO 3 - c3.mp3</file>
+        <file>instruments/piano_3/02- DO# 3 - c-3.mp3</file>
+        <file>instruments/piano_3/03- RE 3 - d3.mp3</file>
+        <file>instruments/piano_3/04- RE# 3 - d-3.mp3</file>
+        <file>instruments/piano_3/05- MI 3 - e3.mp3</file>
+        <file>instruments/piano_3/06- FA 3 - f3.mp3</file>
+        <file>instruments/piano_3/07- FA# 3 - f-3.mp3</file>
+        <file>instruments/piano_3/08- SOL 3 - g3.mp3</file>
+        <file>instruments/piano_3/09- SOL# 3 - g-3.mp3</file>
+        <file>instruments/piano_4/01- c4.mp3</file>
+        <file>instruments/piano_4/02- c-4.mp3</file>
+        <file>instruments/piano_4/03- d4.mp3</file>
+        <file>instruments/piano_4/04- d-4.mp3</file>
+        <file>instruments/piano_4/05- e4.mp3</file>
+        <file>instruments/piano_4/06- f4.mp3</file>
+        <file>instruments/piano_4/07- f-4.mp3</file>
+        <file>instruments/piano_4/08- g4.mp3</file>
+        <file>instruments/piano_4/09- g-4.mp3</file>
+        <file>instruments/piano_5/01- c5.mp3</file>
+        <file>instruments/piano_5/02- c-5.mp3</file>
+        <file>instruments/piano_5/03- d5.mp3</file>
+        <file>instruments/piano_5/04- d-5.mp3</file>
+        <file>instruments/piano_5/05- e5.mp3</file>
+        <file>instruments/piano_5/06- f5.mp3</file>
+        <file>instruments/piano_5/07- f-5.mp3</file>
+        <file>instruments/piano_5/08- g5.mp3</file>
+        <file>instruments/piano_5/09- g-5.mp3</file>
+        <file>instruments/kalimba/01- E2.mp3</file>
+        <file>instruments/kalimba/02- C2.mp3</file>
+        <file>instruments/kalimba/03- A1.mp3</file>
+        <file>instruments/kalimba/04- _D1.mp3</file>
+        <file>instruments/kalimba/05- F1.mp3</file>
+        <file>instruments/kalimba/06- C1.mp3</file>
+        <file>instruments/kalimba/07- E1.mp3</file>
+        <file>instruments/kalimba/08- G1.mp3</file>
+        <file>instruments/kalimba/09- B1.mp3</file>
     </qresource>
 </RCC>
