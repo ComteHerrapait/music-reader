@@ -46,5 +46,17 @@
         <file>instruments/kalimba/09- B1.mp3</file>
         <file>instruments/kalimba/04- F1.mp3</file>
         <file>instruments/kalimba/05- _D1.mp3</file>
+        <file>instruments/kalimba_b/01- E2.mp3</file>
+        <file>instruments/kalimba_b/02- C2.mp3</file>
+        <file>instruments/kalimba_b/03- A1.mp3</file>
+        <file>instruments/kalimba_b/04- F1.mp3</file>
+        <file>instruments/kalimba_b/05- _D1.mp3</file>
+        <file>instruments/kalimba_b/06- C1.mp3</file>
+        <file>instruments/kalimba_b/07- E1.mp3</file>
+        <file>instruments/kalimba_b/08- G1.mp3</file>
+        <file>instruments/kalimba_b/09-_Bb1.mp3</file>
+        <file>instruments/kalimba_b/10- D2.mp3</file>
+        <file>instruments/kalimba_b/19- Bb1.mp3</file>
+        <file>instruments/kalimba_b/19- Bb2.mp3</file>
     </qresource>
 </RCC>
